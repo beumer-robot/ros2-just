@@ -6,7 +6,7 @@ wget --no-check-certificate -O ~/fisher.fish https://raw.githubusercontent.com/j
 source ~/fisher.fish && fisher install jorgebucaran/fisher && rm ~/fisher.fish
 
 echo "Installing dependencies for kpbs5/git.fish"
-sudo apt install sqlite3 fzf python3-pip
+sudo apt install sqlite3 fzf python3-pip python3-rosdep
 pip install pre-commit
 echo "Installing kpbs5/git.fish"
 fisher install kpbs5/git.fish
