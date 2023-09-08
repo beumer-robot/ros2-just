@@ -1,7 +1,7 @@
 echo "Removing fish greeting"
 set -U fish_greeting ""
 
-echo "Setting up fisher and omf"
+echo "Setting up fisher"
 wget --no-check-certificate -O ~/fisher.fish https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish
 source ~/fisher.fish && fisher install jorgebucaran/fisher && rm ~/fisher.fish
 
@@ -23,10 +23,8 @@ fisher install kpbaks/peopletime.fish
 echo "Installing kpbs5/ros2.fish"
 fisher install kpbs5/ros2.fish
 
-echo "Installing omf"
-wget --no-check-certificate -O ~/omfinstall https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install
-chmod +x ~/omfinstall
-./omfinstall && rm ~/omfinstall
+echo "Installing edc/bass"
+fisher install edc/bass
 
 cat append-to-fish-conf.fish >>~/.config/fish/config.fish
 # echo "Adding autols feature to ~/.config/fish/config.fish"
