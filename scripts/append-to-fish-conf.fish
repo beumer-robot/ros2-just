@@ -1,3 +1,5 @@
+abbr -a rf 'exec fish'
+
 function list_dir --on-variable PWD
     ls -GF
 end
