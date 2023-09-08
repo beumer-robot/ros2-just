@@ -18,4 +18,8 @@ echo "Installing micro"
 curl https://getmic.ro | bash
 mv ./micro ~/.local/bin/
 
+echo "Installing just"
+curl --proto '=https' --tlsv1.2 -sSf https://just.systems/install.sh | bash -s -- --to ~/.local/bin/
+
+
 fish setup-fish.fish && echo "Reload your terminal session"
