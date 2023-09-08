@@ -12,7 +12,7 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 echo "Getting tmux config"
 mkdir -p ~/.config/tmux
-wget --no-check-certificate -O ~/.config/tmux/tmux.conf https://raw.githubusercontent.com/JnsJensen/dotfiles/main/dot_config/tmux/tmux.conf
+wget --no-check-certificate -O ~/.config/tmux/tmux.conf https://raw.githubusercontent.com/beumer-robot/utils/main/tmux/tmux.conf
 
 echo "Installing micro"
 curl https://getmic.ro | bash
