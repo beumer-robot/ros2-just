@@ -21,5 +21,8 @@ mv ./micro ~/.local/bin/
 echo "Installing just"
 curl --proto '=https' --tlsv1.2 -sSf https://just.systems/install.sh | bash -s -- --to ~/.local/bin/
 
+echo "Getting fish setup script and config"
+wget --no-check-certificate -O ./setup-fish.fish https://raw.githubusercontent.com/beumer-robot/utils/main/scripts/setup-fish.fish
+wget --no-check-certificate -O ~/append-to-fish-conf.fish https://raw.githubusercontent.com/beumer-robot/utils/main/scripts/append-to-fish-conf.fish
 
 fish setup-fish.fish && echo "Reload your terminal session"
