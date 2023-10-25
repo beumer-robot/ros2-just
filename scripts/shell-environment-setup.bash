@@ -1,6 +1,9 @@
 echo "Installing Dependencies"
 sudo apt install git curl wget
 
+echo "Making ~/.local/share/bin"
+mkdir -p ~/.local/share/bin
+
 echo "Installing fish 3"
 sudo apt-add-repository ppa:fish-shell/release-3
 sudo apt update
@@ -22,7 +25,7 @@ curl https://getmic.ro | bash
 mv ./micro ~/.local/share/bin/
 
 echo "Installing just"
-curl --proto '=https' --tlsv1.2 -sSf https://just.systems/install.sh | bash -s -- --to ~/.local/bin/
+curl --proto '=https' --tlsv1.2 -sSf https://just.systems/install.sh | bash -s -- --to ~/.local/share/bin/
 
 echo "Getting fish setup script and config"
 wget --no-check-certificate -O ./setup-fish.fish https://raw.githubusercontent.com/beumer-robot/utils/main/scripts/setup-fish.fish
