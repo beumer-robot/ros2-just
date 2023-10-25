@@ -19,7 +19,7 @@ wget --no-check-certificate -O ~/.config/tmux/tmux.conf https://raw.githubuserco
 
 echo "Installing micro"
 curl https://getmic.ro | bash
-mv ./micro ~/.local/bin/
+mv ./micro ~/.local/share/bin/
 
 echo "Installing just"
 curl --proto '=https' --tlsv1.2 -sSf https://just.systems/install.sh | bash -s -- --to ~/.local/bin/
