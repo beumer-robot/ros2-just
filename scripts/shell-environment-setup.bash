@@ -1,3 +1,6 @@
+echo "Installing Dependencies"
+sudo apt install git curl wget
+
 echo "Installing fish 3"
 sudo apt-add-repository ppa:fish-shell/release-3
 sudo apt update
